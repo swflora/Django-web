@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial_scale=1.0">
+        <title>if-1</title>
+    </head>
+    <body>
+        <script>
+            var userNumber = prompt("input your Number")
+            if (userNumber !== null){
+            if (userNumber % 3 === 0)
+            // === : 피연산자가 같고 자료형도 같으면 true
+            // 그냥 enter를 쳐도 '3의 배수입니다.'라는 결과가 나옴
+            // Null값 처리가 필요함
+            
+                alert("3의 배수입니다.");
+            else
+                alert("3의 배수가 아닙니다.");
+            }
+            else{
+                alert("입력 취소")
+            }
+            
+            
+        </script>
+    </body>
+</html>

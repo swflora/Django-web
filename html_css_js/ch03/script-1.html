@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial_scale=1.0">
+        <!-- 이 파일안에서만 사용 : 지역변수처럼 활용-->
+        <title> Way change the font color </title>
+        <style>
+            body{text-align: center;}
+            #heading {color: blue;}
+            #text {
+                color: gray;
+                font-size: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">javascript is good</h1>
+        <p id="text">click the text</p>
+
+        <script>
+            var heading = document.querySelector("#heading")
+            heading.onclick = function(){
+                heading.style.color = "red";
+            }
+        </script>
+    </body>
+</html>
